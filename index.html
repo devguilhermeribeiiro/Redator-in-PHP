@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redator</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="form-container">
+
+         <div class="title">
+            <h2>Login</h2>
+        </div>
+
+        <form action="/scripts/script.php" method="post" class="form-content">
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Email..." class="input-form" required>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Senha</label>
+                <input type="password" name="password" placeholder="Senha..." class="input-form" required>
+            </div>
+
+            <div class="form-button">
+                <input type="submit" name="login" value="Entrar" class="login">
+                <button class="signin"><a href="register.html">Cadastrar-se</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

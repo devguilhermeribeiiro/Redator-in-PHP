@@ -1,0 +1,17 @@
+{
+    "name": "guilherme/php-redator",
+    "autoload": {
+        "psr-4": {
+            "Guilherme\\PhpRedator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "guilherme",
+            "email": "devguilhermeribeiro000@gmail.com"
+        }
+    ],
+    "require": {
+        "ramsey/uuid": "^4.7"
+    }
+}
