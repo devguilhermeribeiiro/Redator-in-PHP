@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Redação</title>
+    <link rel="stylesheet" href="/styles/create_redaction.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Criação de Redação</h1>
+        <form action="script/create_redaction.php" method="post">
+            <div class="form-group">
+                <label for="title">Título da Redação:</label>
+                <input type="text" name="title" placeholder="Digite o título da redação">
+            </div>
+            <div class="form-group">
+                <label for="content">Corpo da Redação:</label>
+                <textarea  class="redacao" name="content" placeholder="Digite sua redação aqui..."></textarea>
+            </div>
+            <input class="submit-btn" type="submit" name="create" value="Enviar Redação">
+        </form>
+    </div>
+</body>
+</html>

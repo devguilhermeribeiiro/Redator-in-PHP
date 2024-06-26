@@ -1,5 +1,5 @@
 <?php
-require 'vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $server_name = 'localhost';
 $db_username = 'guilherme';
@@ -19,16 +19,5 @@ if ($db_conn->query($sql_create_db) === TRUE) {
     echo "Error creating database: " . $db_conn->error . "<br>";
 }
 
-mysqli_select_db($db_conn, $db_name);
 
-$sql_create_table = "CREATE TABLE IF NOT EXISTS Users (
-    uuid CHAR(36) PRIMARY KEY,
-    email VARCHAR(50) NOT NULL,
-    password VARCHAR(255) NOT NULL
-)";
-if ($db_conn->query($sql_create_table) === TRUE) {
-    echo "Table Users created or already exists successfully<br>";
-} else {
-    echo "Error creating table: " . $db_conn->error . "<br>";
-}
 
